@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.left {
+ border: solid 2px black;
+ min-width: 50vh;
+ min-height: 50vh;
+ display: flex;
+ background-color: white;
+ position: relative;
+ top: 0;
+ left: 0;
+}
+
+.right {
+    border: solid 2px black;
+    min-width: 50vw;
+    min-height: 50vh;
+    background-color: white;
+}
+
+.wallpaper {
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    width: auto;
+    background-image: url(./leagueoflegends_wallpaper.jpeg);
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 30vh;
+    gap: 1vw;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+img#logo {
+    height: 8vh;
+}
+
+.league {
+    color: white;
+}
