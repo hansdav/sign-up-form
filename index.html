@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Archivo+Black">
+    <style>
+        .dummytext, p.field-title {
+            font-family: "Archivo Black";
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -17,8 +24,38 @@
         </div>
     </div>
     <div class="right">
-        <div id="header">This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolorem illo quas necessitatibus. Unde magni quos architecto! Odio quod pariatur dignissimos sint voluptates doloribus dolores suscipit iure nostrum! Corporis, ipsum. <br>You know you want to.</div>
-        <div id="data">data entry</div>
+        <div class="dummytext"><p>This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolorem illo quas necessitatibus. Sign up now to get started.</p>
+             <div class="dummytexttwo">You <em>know</em> you want to.</div>
+            </div>
+        <div class="field">
+            <p class="field-title">Let's do this!</p>
+            <div class="input">
+                <input type="text" id="first_name" name="first_name" required placeholder=" " />
+                <label for="first_name">First Name</label>
+            </div>
+
+            <div class="input">
+                <input type="" id="last_name" name="last_name" required placeholder="" />
+                <label for="last_name">Last Name</label>
+            </div>
+
+            <div class="input"> 
+                <input type="email" id="email" name="email" required placeholder=" " />
+                <label for="email">Email</label>
+            </div>
+            <div class="input"> 
+                <input type="phone" id="phone" name="phone" required placeholder=" " />
+                <label for="phone">Phone</label>
+            </div>
+            <div class="input">
+                <input type="password" id="password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+                <label for="password">Password</label>
+            </div>
+            <div class="input">
+                <input type="password" name="confirm-password" id="confirm-password" required>
+                <label for="confirm-password">Confirm password</label>
+            </div>
+        </div>
         <div id="create">account creation</div>
     </div>
 </div>

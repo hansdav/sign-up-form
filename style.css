@@ -10,10 +10,10 @@ body {
 
 }
 
+/* left side of the page */
+
 .left {
- border: solid 2px black;
- min-width: 50vh;
- min-height: 50vh;
+ width: 50vh;
  display: flex;
  background-color: white;
  position: relative;
@@ -21,19 +21,12 @@ body {
  left: 0;
 }
 
-.right {
-    border: solid 2px black;
-    min-width: 50vw;
-    min-height: 50vh;
-    background-color: white;
-}
-
 .wallpaper {
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
     background-color: black;
-    width: auto;
+    width: 100%;
     background-image: url(./leagueoflegends_wallpaper.jpeg);
 }
 
@@ -55,4 +48,68 @@ img#logo {
 
 .league {
     color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* right side of the page */
+
+.right {
+    background-color: black;
+    color:rgb(236, 236, 236);
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    border: black solid 10px;
+    
+}
+
+.dummytext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    color:rgb(236, 236, 236);
+}
+
+.field {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    width: fit-content;
+    padding: 20px;
+    flex: 1 1 auto;
+    background-color: rgb(32, 36, 37);
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+}
+
+p.field-title{
+    color: rgb(236, 236, 236);
+    font-size: 1rem;
+    width: 100%;
+    font-weight: 200;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+
+input{
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--color);
+}
+
+label {
+    color:rgb(236, 236, 236)
 }
